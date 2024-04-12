@@ -1,0 +1,31 @@
+<!-- pagamento.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+    <main>
+        <h2>Formulário de Pagamento</h2>
+        <form id="form-pagamento">
+            <section id="cartao-credito">
+                <h3>Cartão de Crédito</h3>
+                <input type="text" id="nome-cartao" name="nome-cartao" placeholder="Nome no Cartão" required>
+                <input type="text" id="numero-cartao" name="numero-cartao" placeholder="Número do Cartão" required>
+                <input type="text" id="data-validade" name="data-validade" placeholder="MM/AA" required>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+            </section>
+            <section id="pix">
+                <h3>PIX</h3>
+                <p>Para realizar o pagamento via PIX, utilize o QR Code abaixo:</p>
+                <!-- Aqui, você pode adicionar um QR Code gerado para o PIX -->
+                <img src=/var/www/html/meu_projeto_py_html/midias/qrcode.png alt="QR Code PIX">
+            </section>
+            <button type="submit">Pagar</button>
+        </form>
+    </main>
+</body>
+</html>

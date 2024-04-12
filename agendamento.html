@@ -1,0 +1,24 @@
+<!-- agendamento.html -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Agendamento de Horário</h1>
+    <form id="form-agendamento">
+        <label for="dia">Escolha o dia:</label>
+        <input type="date" id="dia" name="dia" min="2024-01-01" required>
+        <label for="horario">Escolha o horário:</label>
+        <select id="horario" name="horario" required>
+            <!-- Os horários serão gerados via JavaScript -->
+        </select>
+        <button type="submit">Agendar</button>
+    </form>
+
+    <script src="agendamento.js"></script>
+</body>
+</html>
